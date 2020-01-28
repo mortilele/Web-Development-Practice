@@ -1,0 +1,276 @@
+body{margin: 0 auto}
+#first{
+	background-color: rgb(65,94,155);
+	position:absolute;
+	height:84px;
+	width:100%;
+}
+#logo{
+	position:absolute;
+	top:7%;
+	left:13.8%;
+}
+a#facebook{
+	text-decoration:none;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+a#account{
+	position: absolute;
+	left:71%;
+	top:66px;
+	color: rgb(156,180,216);
+}
+
+.btn1{
+	  position: relative;
+	  background-color: rgb(66,103,178);
+	  border: none;
+	  color: white;
+	  text-align: center;
+	  font-size: 12px;
+	  cursor: pointer;
+	  top:10px;
+	  left: 1125px;
+	  padding: 6px;
+	  font-weight: bold !important;
+}
+
+.btn2{
+	  position: relative;
+	  background-color: rgb(96,157,77);
+	  border: 1px solid green;
+	  color: white;
+	  text-align: center;
+	  font-weight: bold !important;
+	  font-size: 20px !important;
+	  cursor: pointer;
+	  top:240px;
+	  left: 5.5%;
+	  padding: 6px 40px !important;
+}
+
+.btn3{
+	position: relative;
+	border: 2px solid black;
+	text-align: center;
+	font-weight: bold;
+	margin: 3px, 5px;
+}
+
+#day{
+	  background-color: white;
+	  border: none;
+	  color: black;
+	  text-align: center;
+	  font-size: 14px;
+	  cursor: pointer;
+	  margin: 5px 73px;
+	  padding: 3px 5px;
+}
+
+#month{
+	  background-color: white;
+	  border: none;
+	  color: black;
+	  text-align: center;
+	  font-size: 14px;
+	  cursor: pointer;
+	  margin: -10px -74px;
+	  padding: 3px 5px;
+}
+#year{
+	  background-color: white;
+	  border: none;
+	  color: black;
+	  text-align: center;
+	  font-size: 14px;
+	  cursor: pointer;
+	  margin: -10px 74px;
+	  padding: 3px 5px;
+}
+
+#container{
+	background: linear-gradient(to top, rgb(212,217,233), rgb(255,255,255));
+	position:absolute;
+	top:82px;
+	height:94%;
+	width:100%;
+}
+.container-3{
+	position: absolute;
+    top:106.5%;
+    width: 100%;
+    height: 25%;
+}
+
+#language{
+	position: absolute;
+    left:10.5%;
+    top:22px;
+}
+#info{
+	position: absolute;
+    left:10.5%;
+    top:66px;
+    width: 70%;
+}
+
+.text{
+	margin: 3px;
+	padding: 0;
+	list-style: none;
+	font-size: 12px;
+	display: inline !important;
+	font-weight:normal;
+}
+
+#Input1{
+	position: absolute;
+	top:35px;
+	width: 11%;
+	height: 29%;
+	left:53%;
+}
+#Input2{
+	position: absolute;
+	top:35px;
+	width: 11%;
+	height: 29%;
+	left:71%;
+}
+.label1{
+	left: 53%;
+	position: absolute;
+	color: white;
+	top:17px;
+	font-size: 11px;
+}
+
+.label2{
+	left:71%;
+	position: absolute;
+	color: white;
+	top:17px;
+	font-size: 11px;
+}
+
+#image{
+   position:absolute;
+   left:13.7%;
+   top:36px;
+   color:rgb(14,56,95);
+   font-family: Arial, sans-serif;
+   font-size:20px;
+   width:40%;
+   font-weight: bold;
+   line-height:1.5;
+}
+.img{
+	position: relative;
+}
+
+#container-2{
+	position: absolute;
+	top:82px;
+	left:53.8%;
+	width: 40%;
+	height:120%;
+}
+
+#registration{
+	top: 3px;
+	font-weight: bold;
+	position: absolute;
+	left: 6.35%;
+}
+
+#quick{
+	position: absolute;
+	left: 6.35%;
+	top: 67px;
+}
+
+#Input3{
+	left: 6.3%;
+	position: absolute;
+	top: 120px;
+	height: 37px;
+}
+
+#Input4{
+	left: 44%;
+	position: absolute;
+	top: 120px;
+	height: 37px;
+}
+
+#Input5{
+	left: 6.3%;
+	position: absolute;
+	top: 169px;
+	width: 74%;
+	height: 37px;
+}
+
+#Input6{
+	left: 6.3%;
+	position: absolute;
+	top: 218px;
+	width: 74%;
+	height: 37px;
+}
+
+.dropdown{
+	position: absolute;
+	top: 240px;
+	left: -7%;
+}
+
+.birthday{
+	position: relative;
+	color: rgb(144,148,156);
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	left: 13%;
+	font-weight: bold;
+}
+
+#gender{
+	position: relative;
+	color: black;
+	left: 13%;
+	font-size: 18px;
+	font-family: Arial, sans-serif;
+}
+
+#gender input {
+	margin-left: 8px;
+}
+
+.paraghraf{
+	position: relative;
+	top:230px;
+	left: 5.5%;
+	width:53%;
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+	color: rgb(144,148,156);
+
+}
+
+
+.create{
+	top:260px;
+	position: relative;
+	font-weight: bold;
+	font-size: 13px;
+	left: 5.5%;
+	color: rgb(144,148,156);
+	font-family: Arial, sans-serif;
+	width: 74%;
+}
+hr{ border: 0;
+    height: 2px;}
