@@ -6,12 +6,13 @@ import { products } from '../products';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent {
+export class ProductListComponent{
   products = products;
 
-  share() {
-    window.alert('The product has been shared!');
-    window.location.href = "https://telegram.me/share/url?url=https://www.aliexpress.com/category/200216551/gaming-laptops.html&text=Laptop";
+  share(product) {
+    const url: string = window.location.href;
+    window.alert(`The product ${ product.name } has been shared!`);
+    window.open(`https://telegram.me/share/url?url=${ url }&text=${ product.name }`);
 
   }
 

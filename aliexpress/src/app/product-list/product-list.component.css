@@ -7,6 +7,8 @@
 }
 
 .products {
+  width: 66.55%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

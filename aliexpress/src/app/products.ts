@@ -1,19 +1,27 @@
 export const products = [
   {
+    id: 1,
     name: 'Laptop Gaming',
     price: 600.0,
     description: 'A large phone with one of the best screens',
     rating: 5.0,
-    image: 'https://ae01.alicdn.com/kf/HTB1TOtuXSSD3KVjSZFKq6z10VXaC/MECHREVO-Z2-I5-I7-1050Ti-1060-144-15-6-Inch-Intel-8th-Laptop-Gaming-Laptop-Windows.jpg_220x220xz.jpg_.webp'
+    image: 'https://ae01.alicdn.com/kf/HTB1TOtuXSSD3KVjSZFKq6z10VXaC/MECHREVO-Z2-I5-I7-1050Ti-1060-144-15-6-Inch-Intel-8th-Laptop-Gaming-Laptop-Windows.jpg_220x220xz.jpg_.webp',
+    image2: 'https://ae01.alicdn.com/kf/HTB1xI2QV9zqK1RjSZFpq6ykSXXav/Hasee-K670E-G6A5-Laptop-for-Gaming-Intel-9Gen-i5-9400-GTX1050-8G-RAM-512G-SSD-DOS.jpg_220x220xz.jpg_.webp',
+    image3: 'https://ae01.alicdn.com/kf/HTB1xI2QV9zqK1RjSZFpq6ykSXXav/Hasee-K670E-G6A5-Laptop-for-Gaming-Intel-9Gen-i5-9400-GTX1050-8G-RAM-512G-SSD-DOS.jpg_220x220xz.jpg_.webp',
+    link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
+
   },
   {
+    id: 2,
     name: 'Hasee Notebook',
     price: 3527.0,
     description: 'A large phone with one of the best screens',
     rating: 4.9,
-    image:'https://ae01.alicdn.com/kf/HTB1xI2QV9zqK1RjSZFpq6ykSXXav/Hasee-K670E-G6A5-Laptop-for-Gaming-Intel-9Gen-i5-9400-GTX1050-8G-RAM-512G-SSD-DOS.jpg_220x220xz.jpg_.webp'
+    image:'https://ae01.alicdn.com/kf/HTB1xI2QV9zqK1RjSZFpq6ykSXXav/Hasee-K670E-G6A5-Laptop-for-Gaming-Intel-9Gen-i5-9400-GTX1050-8G-RAM-512G-SSD-DOS.jpg_220x220xz.jpg_.webp',
+    link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
   },
   {
+    id: 3,
     name: 'Original Xiaomi',
     price: 882.13,
     description: 'A large phone with one of the best screens',
@@ -21,6 +29,7 @@ export const products = [
     image: 'https://ae01.alicdn.com/kf/Hbfdb709a5cfa4befa8c054e4a33f60a61/Original-Xiaomi-Notebook-Pro-15-6-inch-GTX-1050-Max-Q-4GB-GDDR5-Laptop-i7-8550U.jpg_220x220xz.jpg_.webp'
   },
   {
+    id: 4,
     name: 'Hasee Laptop',
     price: 753.12,
     description: 'A large phone with one of the best screens',
@@ -35,7 +44,7 @@ export const products = [
     image: 'https://ae01.alicdn.com/kf/H8293da656929462a9118fdc988f601e5X/Hasee-K670D-G4E6-Laptop-for-Gaming-Intel-9Gen-G5420-GTX1050-4G-8G-RAM-256G-SSD-15.jpg_220x220xz.jpg_.webp'
   },
   {
-    name: 'Huawei Honor MagicBook',
+    name: 'Huawei Honor Magic',
     price: 400.3,
     description: 'A large phone with one of the best screens',
     rating: 4.5,

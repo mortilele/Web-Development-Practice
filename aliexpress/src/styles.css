@@ -13,14 +13,10 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
 }
 
 router-outlet {
   padding: 0 16px;
-  width: 66.55%;
-  margin: 0 auto;
 }
 
 /* Text */
