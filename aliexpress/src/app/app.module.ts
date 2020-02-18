@@ -7,6 +7,7 @@ import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { VerticalNavComponent } from './vertical-nav/vertical-nav.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
     ProductListComponent,
     TopBarComponent,
     ProductAlertsComponent,
+    VerticalNavComponent,
   ],
   imports: [
     BrowserModule,

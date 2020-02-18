@@ -12,9 +12,6 @@ body {
   margin: 0;
 }
 
-.container {
-}
-
 router-outlet {
   padding: 0 16px;
 }
