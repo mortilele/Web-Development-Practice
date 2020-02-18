@@ -1,7 +1,6 @@
-import {Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {map} from 'rxjs/operators';
-
+import {ProductService} from '../product.service';
 
 @Component({
   selector: 'app-product-item',
@@ -11,12 +10,19 @@ import {map} from 'rxjs/operators';
 export class ProductItemComponent implements OnInit {
   product: any;
 
-  constructor(public activatedRoute: ActivatedRoute) {
-  }
+  constructor(
+    private route: ActivatedRoute,
+    private productService: ProductService,
+  ) {}
 
   ngOnInit() {
-    this.product = window.history.state;
-    console.log(this.product.product);
+    this.getProduct();
+    console.log(this.product);
+  }
+
+  getProduct() {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.productService.getProduct(id).subscribe(product => this.product = product);
   }
 
   zoomIn(id) {

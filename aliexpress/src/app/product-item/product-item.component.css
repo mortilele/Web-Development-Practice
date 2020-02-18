@@ -1,10 +1,7 @@
-
-
 .gallery {
-  width: 100%;
+  display: inline-block;
   border: 1px solid red;
   border-radius: 3px;
-  display: flex;
 }
 
 img {
