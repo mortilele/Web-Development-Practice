@@ -8,6 +8,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { VerticalNavComponent } from './vertical-nav/vertical-nav.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { VerticalNavComponent } from './vertical-nav/vertical-nav.component';
     TopBarComponent,
     ProductAlertsComponent,
     VerticalNavComponent,
+    CategoryComponent,
   ],
   imports: [
     BrowserModule,

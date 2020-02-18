@@ -9,11 +9,15 @@ export class ProductService {
 
   constructor() { }
 
-  getProduct(id : number): Observable<any> {
+  getProduct(id: number): Observable<any> {
     return of(products.find(product => product.id === id));
   }
 
   getProducts(): Observable<any> {
     return of(products) ;
+  }
+
+  getProductsByCategoryId(id: number): Observable<any> {
+    return of(products.filter(product => product.category_id === id));
   }
 }

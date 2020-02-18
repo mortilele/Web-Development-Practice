@@ -12,7 +12,31 @@ export const products = [
     link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
   },
   {
-    id: 1,
+    id: 2,
+    name: 'Office Working',
+    price: 600.0,
+    description: 'A large phone with one of the best screens',
+    rating: 5.0,
+    category_id: 2,
+    image: 'https://ae01.alicdn.com/kf/HTB1TOtuXSSD3KVjSZFKq6z10VXaC/MECHREVO-Z2-I5-I7-1050Ti-1060-144-15-6-Inch-Intel-8th-Laptop-Gaming-Laptop-Windows.jpg_220x220xz.jpg_.webp',
+    image2: 'https://ae01.alicdn.com/kf/HTB1xI2QV9zqK1RjSZFpq6ykSXXav/Hasee-K670E-G6A5-Laptop-for-Gaming-Intel-9Gen-i5-9400-GTX1050-8G-RAM-512G-SSD-DOS.jpg_220x220xz.jpg_.webp',
+    image3: 'https://ae01.alicdn.com/kf/HTB1xI2QV9zqK1RjSZFpq6ykSXXav/Hasee-K670E-G6A5-Laptop-for-Gaming-Intel-9Gen-i5-9400-GTX1050-8G-RAM-512G-SSD-DOS.jpg_220x220xz.jpg_.webp',
+    link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
+  },
+  {
+    id: 3,
+    name: 'Mac',
+    price: 600.0,
+    description: 'A large phone with one of the best screens',
+    rating: 5.0,
+    category_id: 3,
+    image: 'https://ae01.alicdn.com/kf/HTB1TOtuXSSD3KVjSZFKq6z10VXaC/MECHREVO-Z2-I5-I7-1050Ti-1060-144-15-6-Inch-Intel-8th-Laptop-Gaming-Laptop-Windows.jpg_220x220xz.jpg_.webp',
+    image2: 'https://ae01.alicdn.com/kf/HTB1xI2QV9zqK1RjSZFpq6ykSXXav/Hasee-K670E-G6A5-Laptop-for-Gaming-Intel-9Gen-i5-9400-GTX1050-8G-RAM-512G-SSD-DOS.jpg_220x220xz.jpg_.webp',
+    image3: 'https://ae01.alicdn.com/kf/HTB1xI2QV9zqK1RjSZFpq6ykSXXav/Hasee-K670E-G6A5-Laptop-for-Gaming-Intel-9Gen-i5-9400-GTX1050-8G-RAM-512G-SSD-DOS.jpg_220x220xz.jpg_.webp',
+    link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
+  },
+  {
+    id: 4,
     name: 'Laptop Gaming',
     price: 600.0,
     description: 'A large phone with one of the best screens',
@@ -24,7 +48,7 @@ export const products = [
     link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
   },
   {
-    id: 1,
+    id: 5,
     name: 'Laptop Gaming',
     price: 600.0,
     description: 'A large phone with one of the best screens',
@@ -36,7 +60,7 @@ export const products = [
     link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
   },
   {
-    id: 1,
+    id: 6,
     name: 'Laptop Gaming',
     price: 600.0,
     description: 'A large phone with one of the best screens',
@@ -48,7 +72,7 @@ export const products = [
     link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
   },
   {
-    id: 1,
+    id: 7,
     name: 'Laptop Gaming',
     price: 600.0,
     description: 'A large phone with one of the best screens',
@@ -60,7 +84,7 @@ export const products = [
     link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
   },
   {
-    id: 1,
+    id: 8,
     name: 'Laptop Gaming',
     price: 600.0,
     description: 'A large phone with one of the best screens',
@@ -72,7 +96,7 @@ export const products = [
     link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
   },
   {
-    id: 1,
+    id: 9,
     name: 'Laptop Gaming',
     price: 600.0,
     description: 'A large phone with one of the best screens',
@@ -84,7 +108,7 @@ export const products = [
     link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
   },
   {
-    id: 1,
+    id: 10,
     name: 'Laptop Gaming',
     price: 600.0,
     description: 'A large phone with one of the best screens',
@@ -96,7 +120,7 @@ export const products = [
     link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
   },
   {
-    id: 1,
+    id: 11,
     name: 'Laptop Gaming',
     price: 600.0,
     description: 'A large phone with one of the best screens',
@@ -108,31 +132,7 @@ export const products = [
     link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
   },
   {
-    id: 1,
-    name: 'Laptop Gaming',
-    price: 600.0,
-    description: 'A large phone with one of the best screens',
-    rating: 5.0,
-    category_id: 1,
-    image: 'https://ae01.alicdn.com/kf/HTB1TOtuXSSD3KVjSZFKq6z10VXaC/MECHREVO-Z2-I5-I7-1050Ti-1060-144-15-6-Inch-Intel-8th-Laptop-Gaming-Laptop-Windows.jpg_220x220xz.jpg_.webp',
-    image2: 'https://ae01.alicdn.com/kf/HTB1xI2QV9zqK1RjSZFpq6ykSXXav/Hasee-K670E-G6A5-Laptop-for-Gaming-Intel-9Gen-i5-9400-GTX1050-8G-RAM-512G-SSD-DOS.jpg_220x220xz.jpg_.webp',
-    image3: 'https://ae01.alicdn.com/kf/HTB1xI2QV9zqK1RjSZFpq6ykSXXav/Hasee-K670E-G6A5-Laptop-for-Gaming-Intel-9Gen-i5-9400-GTX1050-8G-RAM-512G-SSD-DOS.jpg_220x220xz.jpg_.webp',
-    link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
-  },
-  {
-    id: 1,
-    name: 'Laptop Gaming',
-    price: 600.0,
-    description: 'A large phone with one of the best screens',
-    rating: 5.0,
-    category_id: 1,
-    image: 'https://ae01.alicdn.com/kf/HTB1TOtuXSSD3KVjSZFKq6z10VXaC/MECHREVO-Z2-I5-I7-1050Ti-1060-144-15-6-Inch-Intel-8th-Laptop-Gaming-Laptop-Windows.jpg_220x220xz.jpg_.webp',
-    image2: 'https://ae01.alicdn.com/kf/HTB1xI2QV9zqK1RjSZFpq6ykSXXav/Hasee-K670E-G6A5-Laptop-for-Gaming-Intel-9Gen-i5-9400-GTX1050-8G-RAM-512G-SSD-DOS.jpg_220x220xz.jpg_.webp',
-    image3: 'https://ae01.alicdn.com/kf/HTB1xI2QV9zqK1RjSZFpq6ykSXXav/Hasee-K670E-G6A5-Laptop-for-Gaming-Intel-9Gen-i5-9400-GTX1050-8G-RAM-512G-SSD-DOS.jpg_220x220xz.jpg_.webp',
-    link: 'https://www.aliexpress.com/item/33004698182.html?spm=a2g0o.productlist.0.0.2a8867bfe8t3ld&algo_pvid=b15d2527-877f-4ef0-b694-adec794f6683&algo_expid=b15d2527-877f-4ef0-b694-adec794f6683-0&btsid=0ab6f83915815000042361836e1562&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
-  },
-  {
-    id: 1,
+    id: 12,
     name: 'Laptop Gaming',
     price: 600.0,
     description: 'A large phone with one of the best screens',
