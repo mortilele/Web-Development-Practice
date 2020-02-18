@@ -14,7 +14,7 @@ export class ProductService {
   }
 
   getProducts(): Observable<any> {
-    return of(products) ;
+    return of(products);
   }
 
   getProductsByCategoryId(id: number): Observable<any> {

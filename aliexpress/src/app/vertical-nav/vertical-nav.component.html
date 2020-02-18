@@ -1,6 +1,3 @@
 <div class="sidenav">
-  <a href="/category/1">Gaming</a>
-  <a href="/category/2">Office</a>
-  <a href="#clients">Bugdet</a>
-  <a href="#contact">Mac</a>
+  <a *ngFor="let category of categories" routerLink="/category/{{category.id}}"> {{category.name}} </a>
 </div>

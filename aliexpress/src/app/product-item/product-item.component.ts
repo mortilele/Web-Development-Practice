@@ -17,7 +17,6 @@ export class ProductItemComponent implements OnInit {
 
   ngOnInit() {
     this.getProduct();
-    console.log(this.product);
   }
 
   getProduct() {
@@ -38,7 +37,7 @@ export class ProductItemComponent implements OnInit {
   }
 
   Share() {
-    window.open(this.product.product.link);
+    window.open(this.product.link);
   }
 
 
