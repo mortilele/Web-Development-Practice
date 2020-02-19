@@ -14,7 +14,7 @@ export class ProductListComponent implements OnInit {
   constructor(private productService: ProductService) {}
 
   share(product) {
-    const url: string = window.location.href;
+    const url: string = window.location.href + '/' + product.id;
     window.alert(`The product ${ product.name } has been shared!`);
     window.open(`https://telegram.me/share/url?url=${ url }&text=${ product.name }`);
   }

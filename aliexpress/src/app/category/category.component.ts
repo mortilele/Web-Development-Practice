@@ -17,7 +17,7 @@ export class CategoryComponent implements OnInit {
     private productService: ProductService,
     private categoryService: CategoryService
   ) {
-    this.router.events.subscribe((value => {
+    this.router.events.subscribe((value =>{
       this.getProducts();
       this.getCategory();
     }));
