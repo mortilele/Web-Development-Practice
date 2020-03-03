@@ -31,6 +31,21 @@ export class ProductListComponent implements OnInit {
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
+
+  add(name: string): void {
+    name = name.trim();
+    const description = 'New descirption';
+    const price = 600.0;
+    const image = 'https://ae01.alicdn.com/kf/H3d53910ec693473d86f17f86a8dad903O/LHMZNIY-Laptop-15-6-inch-Windows10-Notebook-16GB-DDR4-RAM-1T-SSD-HD-screen-intel-1.jpg_220x220xz.jpg_.webp';
+    const rating = 0.0;
+    // tslint:disable-next-line:variable-name
+    const category_id = 1;
+    if (!name) { return; }
+    this.productService.addHero({ name, description, price, image, rating, category_id })
+      .subscribe(product => {
+        this.products.push(product);
+      });
+  }
 }
 
 

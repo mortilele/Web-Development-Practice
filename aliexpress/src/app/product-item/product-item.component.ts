@@ -40,6 +40,13 @@ export class ProductItemComponent implements OnInit {
     window.open(this.product.link);
   }
 
+  save(): void {
+    this.productService.updateHero(this.product)
+      .subscribe(() => this.goBack());
+  }
 
 
+  private goBack() {
+
+  }
 }

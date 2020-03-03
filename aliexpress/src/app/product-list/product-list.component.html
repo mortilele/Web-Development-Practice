@@ -20,8 +20,15 @@
           (notify)="onNotify()">
         </app-product-alerts>
       </div>
-
-
-
   </div>
+</div>
+
+<div>
+  <label>Product name:
+    <input #productName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(productName.value); productName.value=''">
+    add
+  </button>
 </div>

@@ -18,6 +18,17 @@
   <div class="column">
     <h4> Characteristics: Super Cool Dima</h4>
     <button (click)="Share()"> Go to alik </button>
+    <br>
+    <br>
+    <label> Name:
+      <input [(ngModel)]="product.name" placeholder="title">
+    </label>
+    <br>
+    <br>
+    <label> Description:
+      <input [(ngModel)]="product.description" placeholder="description">
+    </label>
+    <button (click)="save()">save</button>
   </div>
 </div>
 
