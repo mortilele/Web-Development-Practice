@@ -1,0 +1,27 @@
+.films {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.films-item {
+  flex: 10%;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 10px 0px;
+  background: lightskyblue;
+
+}
+
+.wrapper {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: steelblue;
+}

@@ -1,0 +1,16 @@
+<ul>
+  <li> Title: {{film.title | uppercase}}</li>
+  <li> Description: {{film.description}}</li>
+  <li> View count: {{film.viewCount}}</li>
+</ul>
+
+<div class="film-input">
+  <label> Title:
+    <input class="input-text" [(ngModel)]="film.title" placeholder="title">
+  </label>
+  <br>
+  <br>
+  <label> Description:
+    <input class="input-text" [(ngModel)]="film.description" placeholder="description">
+  </label>
+</div>

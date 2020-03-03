@@ -1,0 +1,13 @@
+<h1> Akhmetov Alik 18BD110192 </h1>
+<h2> From group 11:00 - 13:00 </h2>
+<div class="wrapper">
+  <h2 style="text-align:center;">Films</h2>
+  <div class="films">
+    <div class="films-item" *ngFor="let film of films">
+      <h3> <a routerLink="/films/{{film.id}}"> {{ film.title }} </a>
+      </h3>
+      <h4> {{ film.description }}</h4>
+      <h5 style="text-align:right;right: 0px;"> Views: {{ film.viewCount }}</h5>
+    </div>
+  </div>
+</div>
