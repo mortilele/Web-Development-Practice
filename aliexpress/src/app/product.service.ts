@@ -44,6 +44,7 @@ export class ProductService {
 
   private handleError(operation = 'operation', result?) {
     return (error: any): Observable<any> => {
+      console.log('Handle error');
       console.error(error); // log to console instead
       return of(result);
     };
