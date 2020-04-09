@@ -2,7 +2,7 @@
 <div class="limiter">
   <div class="container-login100">
     <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
-      <form class="login100-form validate-form">
+      <div class="login100-form validate-form">
         <div class="sign">
         <span class="alik">
           Log
@@ -12,7 +12,7 @@
         </span>
         </div>
         <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-          <input class="input100" type="text" [(ngModel)]="email" placeholder="Email">
+          <input class="input100" type="text" [(ngModel)]="username" placeholder="Username">
           <span class="focus-input100-1"></span>
           <span class="focus-input100-2"></span>
         </div>
@@ -24,7 +24,7 @@
         </div>
 
         <div class="container_login_btn ">
-          <button class="login_form_btn">
+          <button (click)="loginUser()" class="login_form_btn">
             Sign in
           </button>
         </div>
@@ -37,7 +37,7 @@
             Register
           </a>
         </div>
-      </form>
+      </div>
     </div>
   </div>
 </div>

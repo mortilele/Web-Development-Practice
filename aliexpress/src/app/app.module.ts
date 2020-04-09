@@ -18,6 +18,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import {AuthService} from './auth.service';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,7 @@ import { RegisterComponent } from './register/register.component';
     HttpClientModule,
     FormsModule,
   ],
-  providers: [LazyLoadScriptService],
+  providers: [LazyLoadScriptService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
