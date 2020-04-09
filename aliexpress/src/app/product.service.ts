@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {Observable, of} from 'rxjs';
-import { products } from './products';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 
@@ -8,7 +7,11 @@ import { catchError, map, tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ProductService {
-  private productsUrl = 'api/products';
+  baseUrl = 'http://127.0.0.1:8000';
+  httpHeaders = new HttpHeaders(
+    {'Content-Type': 'application/json'}
+  );
+
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
@@ -16,30 +19,43 @@ export class ProductService {
   constructor(private http: HttpClient ) { }
 
   getProduct(id: number): Observable<any> {
-    const url = `${this.productsUrl}/${id}`;
-    return this.http.get(url).pipe(
-      tap(_ => console.log(`fetched hero id=${id}`)),
-      catchError(this.handleError(`getHero id=${id}`))
-    );
+    return this.http.get(this.baseUrl + '/api/products/' + id + '/', this.httpOptions);
   }
 
   getProducts(): Observable<any> {
-    return this.http.get<any>(this.productsUrl)
+    return this.http.get(this.baseUrl + '/api/products/', this.httpOptions)
       .pipe(
         tap(_ => console.log('fetched products')),
         catchError(this.handleError('getProducts', []))
       );
   }
 
-  getProductsByCategoryId(id: number): Observable<any> {
-    return of(products.filter(product => product.category_id === id));
+  getNewProducts(): Observable<any> {
+    return this.http.get(this.baseUrl + '/api/products/', {params: {is_new: 'true'}, headers: this.httpHeaders});
   }
 
-  updateHero (product): Observable<any> {
-    return this.http.put(this.productsUrl, product, this.httpOptions).pipe(
-      tap(_ => console.log(`updated hero id=${product.id}`)),
-      catchError(this.handleError('updateHero'))
-    );
+  getTopProducts(): Observable<any> {
+    return this.http.get(this.baseUrl + '/api/products/', {params: {in_top: 'true'}, headers: this.httpHeaders});
+  }
+
+  getProductsByCategoryId(id): Observable<any> {
+    return this.http.get(this.baseUrl + '/api/products/', {params: {category: id}, headers: this.httpHeaders});
+  }
+
+  getProductsByFabricator(id, categoryId): Observable<any> {
+    const params = {
+      fabricator: id,
+      category: (categoryId) ? categoryId : ''
+    };
+    return this.http.get(this.baseUrl + '/api/products/', {params, headers: this.httpHeaders});
+  }
+
+  getProductRatingOverview(id): Observable<any> {
+    return this.http.get(this.baseUrl + '/api/reviews/total_ratings/', {params: {product: id}, headers: this.httpHeaders});
+  }
+
+  getOrderedProducts(ordering): Observable<any> {
+    return this.http.get(this.baseUrl + '/api/products/', {params: {ordering}, headers: this.httpHeaders});
   }
 
   private handleError(operation = 'operation', result?) {
@@ -48,12 +64,5 @@ export class ProductService {
       console.error(error); // log to console instead
       return of(result);
     };
-  }
-
-  addHero(product): Observable<any> {
-    return this.http.post(this.productsUrl, product, this.httpOptions).pipe(
-      tap((newHero: any) => console.log(`added hero w/ id=${newHero.id}`)),
-      catchError(this.handleError('addHero'))
-    );
   }
 }

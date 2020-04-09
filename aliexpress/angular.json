@@ -24,7 +24,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/bootstrap.css",
+              "src/styles.css",
+              "src/assets/css/flaticon.css",
+              "src/assets/css/jquery-ui.css",
+              "src/assets/css/font-awesome.min.css"
             ],
             "scripts": []
           },
