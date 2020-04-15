@@ -9,7 +9,7 @@ router.register(r'vacancies', views.VacancyViewSet)
 
 urlpatterns = [
     url(r'^users/', views.users, name='users'),
-    url(r'^token/', obtain_jwt_token),
+    url(r'^login/', obtain_jwt_token),
 ]
 
 urlpatterns += router.urls

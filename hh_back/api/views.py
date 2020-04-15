@@ -7,15 +7,17 @@ from rest_framework.permissions import IsAuthenticated
 from .models import Vacancy, Company
 from .serializers import CompanySerializer, VacancyFullSerializer, VacancyShortSerializer, CompanyCreateSerializer
 from rest_framework import viewsets
-from rest_framework.decorators import action, permission_classes
+from rest_framework.decorators import action
 from rest_framework.response import Response
 from django.contrib.auth.models import User
+from utils.permissions import CompanyPermission
 
 
 # Create your views here.
 class CompanyViewSet(viewsets.ModelViewSet):
     queryset = Company.objects.all()
     serializer_class = CompanySerializer
+    permission_classes = [CompanyPermission]
 
     def get_serializer_class(self):
         if self.action == 'create':
@@ -39,7 +41,6 @@ class VacancyViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
 
-@permission_classes([IsAuthenticated])
 def users(request):
     if request.method == 'GET':
         user_list = User.objects.all()
